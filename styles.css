@@ -1,0 +1,113 @@
+body{
+  background-image: url(https://img.freepik.com/free-photo/black-stacked-stones_1194-5730.jpg);
+}
+div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+  }
+  .box{
+    margin: auto;
+    border: 2px solid white;
+    height: 160px;
+    width: 360px;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+  }
+  .box:hover{
+    width: 1000px;
+  }
+  a:hover{
+    border-bottom: 1px solid bisque;
+  }
+  .box-data{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin: auto;
+    color: #fff;
+  }
+  .parent{
+    color: white;
+    margin-top: 5rem;
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  a{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 6px;
+    color: black;
+  }
+  a:hover{
+    font-weight: 700;
+    color: bisque;
+  }
+  .flex-container{
+    background-color: gray;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+.dropdown-content {
+      animation: growDown 300ms ease-in-out ;
+    background-color: gray;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  button{
+    font-size: 25px;
+    border: none;
+    background-color: gray;
+  }
+  #output{
+    background-color: white;
+  }
+  
+  #output,#inpt{
+    /* margin: 5px; */
+    font-size: 25px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ @media screen and (max-width:497px){
+  .parent{
+    font-size: 20px;
+  }
+
+}
+@media screen and (min-width:400px){
+  a{
+    padding: 5px;
+  }
+   .box{
+     width: 660px;
+   }
+   .flex-container{
+     display: flex;
+     justify-content: space-between;
+   }
+  }
