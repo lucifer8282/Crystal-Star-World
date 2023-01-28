@@ -51,7 +51,31 @@ div{
   .flex-container{
     background-color: gray;
   }
+  button{
+    font-size: 25px;
+    border: none;
+    background-color: gray;
+  }
+  #output{
+    background-color: white;
+  }
+  
+  #output,#inpt{
+    /* margin: 5px; */
+    font-size: 25px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ @media screen and (max-width:497px){
+   .flex-container{
+   width:360px;
+   }
+  .parent{
+    font-size: 20px;
+  }
   .dropdown {
+   
     position: relative;
     display: inline-block;
 }
@@ -77,30 +101,6 @@ div{
     padding: 12px 16px;
     z-index: 1;
   }
-  button{
-    font-size: 25px;
-    border: none;
-    background-color: gray;
-  }
-  #output{
-    background-color: white;
-  }
-  
-  #output,#inpt{
-    /* margin: 5px; */
-    font-size: 25px;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
- @media screen and (max-width:497px){
-   .flex-container{
-   width:360px;
-   }
-  .parent{
-    font-size: 20px;
-  }
-
 }
 @media screen and (min-width:400px){
   a{
