@@ -94,6 +94,9 @@ div{
     display: block;
   }
  @media screen and (max-width:497px){
+   .flex-container{
+   width:360px;
+   }
   .parent{
     font-size: 20px;
   }
